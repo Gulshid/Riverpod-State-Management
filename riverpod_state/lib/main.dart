@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_state/view/counter_view.dart';
+import 'package:riverpod_state/view/counter_screen.dart';
 import 'package:riverpod_state/view/state_provider.dart';
 
 void main() {
@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
         // home: c
-        initialRoute: 'counterScreen',
+        initialRoute: 'Counter',
         routes: {
           'homescreen': (context) => HomeScreen(),
-          'counterScreen': (context) => CounterView(),
+          'Counter':(contex)=> CounterScreen(),
         },
       ),
     );
